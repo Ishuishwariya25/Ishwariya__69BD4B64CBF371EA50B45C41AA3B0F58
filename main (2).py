@@ -1,23 +1,7 @@
-class player:
-
-  def play(self):
-    print("The player is playing cricket.")
-
-
-class Batsman(player):
-
-  def play(self):
-    print("The batsman is batting.")
-
-
-class Bowler(player):
-
-  def play(self):
-    print("The bowler is bowling.")
-
-
-batsman = Batsman()
-bowler = Bowler()
-
-batsman.play()
-bowler.play()
+def recur_factorial(n):
+  if (n == 1):
+    return 1
+  else:
+    return n * recur_factorial(n-1)
+num = int(input("enter a number"))
+print("factorial is", recur_factorial(num))
